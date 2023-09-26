@@ -37,8 +37,6 @@ lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/operations/ShowPetB
 lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/operations/ShowPetByIdResponse.java
 lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/shared/Error.java
 lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/shared/Pet.java
-docs/sdks/apinamepet/README.md
-docs/sdks/pets/README.md
 USAGE.md
 docs/models/operations/CreatePetsResponse.md
 docs/models/operations/ListPetsRequest.md
@@ -47,3 +45,5 @@ docs/models/operations/ShowPetByIdRequest.md
 docs/models/operations/ShowPetByIdResponse.md
 docs/models/shared/Error.md
 docs/models/shared/Pet.md
+docs/sdks/apinamepet/README.md
+docs/sdks/pets/README.md

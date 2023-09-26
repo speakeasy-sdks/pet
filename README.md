@@ -12,14 +12,12 @@
 ### Gradle
 
 ```groovy
-implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.1.2'
+implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.2.0'
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```java
 package hello.world;
 
@@ -55,6 +53,18 @@ public class Application {
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
 * [showPetById](docs/sdks/pets/README.md#showpetbyid) - Info for a specific pet
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
