@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.2.0'
+implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.2.1'
 ```
 <!-- End SDK Installation -->
 
@@ -47,7 +47,7 @@ public class Application {
 ## Available Resources and Operations
 
 
-### [Pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
@@ -57,8 +57,6 @@ public class Application {
 
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 

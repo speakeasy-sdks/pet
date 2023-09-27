@@ -41,7 +41,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.testworkspace2.pet'
             artifactId = 'api-name-pet'
-            version = '0.2.0'
+            version = '0.2.1'
 
             from components.java
 
