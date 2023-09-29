@@ -63,7 +63,7 @@ public class Application {
                 .build();
 
             ListPetsRequest req = new ListPetsRequest() {{
-                limit = 548814;
+                limit = 21453;
             }};            
 
             ListPetsResponse res = sdk.pets.listPets(req);
@@ -109,7 +109,7 @@ public class Application {
             ApiNamePet sdk = ApiNamePet.builder()
                 .build();
 
-            ShowPetByIdRequest req = new ShowPetByIdRequest("provident");            
+            ShowPetByIdRequest req = new ShowPetByIdRequest("Bicycle");            
 
             ShowPetByIdResponse res = sdk.pets.showPetById(req);
 
