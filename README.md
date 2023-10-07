@@ -12,7 +12,7 @@
 ### Gradle
 
 ```groovy
-implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.4.1'
+implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.4.2'
 ```
 <!-- End SDK Installation -->
 
