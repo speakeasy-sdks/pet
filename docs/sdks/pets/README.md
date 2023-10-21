@@ -109,7 +109,7 @@ public class Application {
             ApiNamePet sdk = ApiNamePet.builder()
                 .build();
 
-            ShowPetByIdRequest req = new ShowPetByIdRequest("Bicycle");            
+            ShowPetByIdRequest req = new ShowPetByIdRequest("string");            
 
             ShowPetByIdResponse res = sdk.pets.showPetById(req);
 
