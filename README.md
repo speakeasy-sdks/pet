@@ -6,18 +6,21 @@
     
 </div>
 
-<!-- Start SDK Installation -->
+<!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
 ### Gradle
 
 ```groovy
-implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.9.1'
+implementation 'com.testworkspace2.pet.api_name_pet:api-name-pet:0.10.0'
 ```
-<!-- End SDK Installation -->
+<!-- End SDK Installation [installation] -->
 
+<!-- Start SDK Example Usage [usage] -->
 ## SDK Example Usage
-<!-- Start SDK Example Usage -->
+
+### Example
+
 ```java
 package hello.world;
 
@@ -27,10 +30,9 @@ import com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            ApiNamePet sdk = ApiNamePet.builder()
-                .build();
+            ApiNamePet sdk = ApiNamePet.builder()            .build();
 
-            CreatePetsResponse res = sdk.pets.createPets();
+            com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse res = sdk.pets.createPets();
 
             if (res.statusCode == 200) {
                 // handle response
@@ -41,24 +43,40 @@ public class Application {
     }
 }
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
 
-<!-- Start SDK Available Operations -->
+<!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
-
 
 ### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
 * [showPetById](docs/sdks/pets/README.md#showpetbyid) - Info for a specific pet
-<!-- End SDK Available Operations -->
+<!-- End Available Resources and Operations [operations] -->
 
 
 
-<!-- Start Dev Containers -->
+<!-- Start Server Selection [server] -->
+## Server Selection
 
-<!-- End Dev Containers -->
+## Server Selection
+
+### Select Server by Index
+
+You can override the default server globally using the `setServerIndex` option when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+| # | Server | Variables |
+| - | ------ | --------- |
+| 0 | `http://petstore.swagger.io/v1` | None |
+
+
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally using the `setServerURL` option when initializing the SDK client instance. For example:
+<!-- End Server Selection [server] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

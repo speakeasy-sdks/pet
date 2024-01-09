@@ -22,10 +22,9 @@ import com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            ApiNamePet sdk = ApiNamePet.builder()
-                .build();
+            ApiNamePet sdk = ApiNamePet.builder()            .build();
 
-            CreatePetsResponse res = sdk.pets.createPets();
+            com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse res = sdk.pets.createPets();
 
             if (res.statusCode == 200) {
                 // handle response
@@ -59,14 +58,15 @@ import com.testworkspace2.pet.api_name_pet.models.operations.ListPetsResponse;
 public class Application {
     public static void main(String[] args) {
         try {
-            ApiNamePet sdk = ApiNamePet.builder()
-                .build();
+            ApiNamePet sdk = ApiNamePet.builder()            .build();
 
-            ListPetsRequest req = new ListPetsRequest(){{
+            com.testworkspace2.pet.api_name_pet.models.operations.ListPetsRequest req = new ListPetsRequest(
+){{
                 limit = 21453;
-            }};            
 
-            ListPetsResponse res = sdk.pets.listPets(req);
+            }};
+
+            com.testworkspace2.pet.api_name_pet.models.operations.ListPetsResponse res = sdk.pets.listPets(req);
 
             if (res.pets != null) {
                 // handle response
@@ -106,12 +106,12 @@ import com.testworkspace2.pet.api_name_pet.models.operations.ShowPetByIdResponse
 public class Application {
     public static void main(String[] args) {
         try {
-            ApiNamePet sdk = ApiNamePet.builder()
-                .build();
+            ApiNamePet sdk = ApiNamePet.builder()            .build();
 
-            ShowPetByIdRequest req = new ShowPetByIdRequest("string");            
+            com.testworkspace2.pet.api_name_pet.models.operations.ShowPetByIdRequest req = new ShowPetByIdRequest(
+                "string");
 
-            ShowPetByIdResponse res = sdk.pets.showPetById(req);
+            com.testworkspace2.pet.api_name_pet.models.operations.ShowPetByIdResponse res = sdk.pets.showPetById(req);
 
             if (res.pet != null) {
                 // handle response
