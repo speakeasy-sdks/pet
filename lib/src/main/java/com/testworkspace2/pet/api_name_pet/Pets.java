@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.testworkspace2.pet.api_name_pet.utils.HTTPClient;
 import com.testworkspace2.pet.api_name_pet.utils.HTTPRequest;
 import com.testworkspace2.pet.api_name_pet.utils.JSON;
+import com.testworkspace2.pet.api_name_pet.utils.SerializedBody;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.util.function.Function;
@@ -24,16 +25,22 @@ public class Pets {
 
     /**
      * Create a pet
+     * @param request the request object containing all of the parameters for the API call
      * @return the response from the API call
      * @throws Exception if the API call fails
      */
-    public com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse createPets() throws Exception {
+    public com.testworkspace2.pet.api_name_pet.models.operations.CreatePetsResponse createPets(com.testworkspace2.pet.api_name_pet.models.shared.Pet request) throws Exception {
         String baseUrl = this.sdkConfiguration.serverUrl;
         String url = com.testworkspace2.pet.api_name_pet.utils.Utils.generateURL(baseUrl, "/pets");
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("POST");
         req.setURL(url);
+        SerializedBody serializedRequestBody = com.testworkspace2.pet.api_name_pet.utils.Utils.serializeRequestBody(request, "request", "json");
+        if (serializedRequestBody == null) {
+            throw new Exception("Request body is required");
+        }
+        req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", this.sdkConfiguration.userAgent);

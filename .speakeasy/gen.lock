@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 9dca54fd-a2f4-4a9e-8d1e-b9ada533c552
 management:
-  docChecksum: 2516596125ef223fbbef6c434d22eaac
+  docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.1
-  releaseVersion: 0.10.0
-  configChecksum: e48bd11522819107cdaa3689e82f6462
+  generationVersion: 2.230.3
+  releaseVersion: 0.10.1
+  configChecksum: 2acdada91337aaa983ee8cdd10fe3609
   repoURL: https://github.com/speakeasy-sdks/pet.git
   repoSubDirectory: .
   published: true
