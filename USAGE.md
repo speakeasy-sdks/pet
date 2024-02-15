@@ -13,8 +13,8 @@ public class Application {
 
             com.testworkspace2.pet.api_name_pet.models.shared.Pet req = new Pet(
                 596804L,
-                "string"){{
-                tag = "string";
+                "<value>"){{
+                tag = "<value>";
 
             }};
 

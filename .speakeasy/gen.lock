@@ -4,15 +4,15 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.3
-  releaseVersion: 0.10.1
-  configChecksum: 2acdada91337aaa983ee8cdd10fe3609
+  generationVersion: 2.258.2
+  releaseVersion: 0.11.0
+  configChecksum: 703fee943023f8212a814eba0445bf7e
   repoURL: https://github.com/speakeasy-sdks/pet.git
   repoSubDirectory: .
   published: true
 features:
   java:
-    core: 3.2.2
+    core: 3.5.1
     globalServerURLs: 2.82.1
 generatedFiles:
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/SDKConfiguration.java
@@ -23,6 +23,7 @@ generatedFiles:
   - gradle/wrapper/gradle-wrapper.properties
   - gradlew
   - gradlew.bat
+  - settings.gradle
   - lib/build.gradle
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/utils/DateTimeDeserializer.java
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/utils/DateTimeSerializer.java
@@ -46,7 +47,6 @@ generatedFiles:
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/utils/SpeakeasyMetadata.java
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/utils/Types.java
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/utils/Utils.java
-  - settings.gradle
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/operations/CreatePetsResponse.java
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/operations/ListPetsRequest.java
   - lib/src/main/java/com/testworkspace2/pet/api_name_pet/models/operations/ListPetsResponse.java
